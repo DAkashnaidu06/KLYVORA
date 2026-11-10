@@ -1,328 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta name="google-site-verification" content="98_sW8MhFPBHX1WffjGVIAYfjY82l7ptXBjqVz0lozc" />
 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>KLYVORA | Premium Web Design &amp; Digital Agency</title>
-        <meta name="description" content="KLYVORA is a creative digital agency building premium websites, modern web applications and powerful digital experiences for businesses worldwide.">
-        <meta name="keywords" content="KLYVORA, digital agency, web design, web development, website design company, UI UX design, creative agency, business website">
-        <meta name="author" content="Aakash Naidu D">
-        <meta name="robots" content="index, follow">
-        <meta property="og:title" content="KLYVORA | Your Vision. Our Creation.">
-        <meta property="og:description" content="We create premium digital experiences, modern websites and powerful online identities.">
-        <meta property="og:type" content="website">
-        <meta property="og:site_name" content="KLYVORA">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="KLYVORA | Digital Experiences Beyond Limits">
-        <meta name="twitter:description" content="Your Vision. Our Creation.">
+    <meta name="theme-color" content="#050508">
 
-    <meta name="theme-color" content="#08080d">
-    <link rel="icon" type="image/svg+xml" href="assets/klyvora-icon.svg">
+    <meta name="description"
+        content="KLYVORA creates premium websites, digital experiences and powerful online identities for ambitious brands and businesses.">
 
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "KLYVORA",
-            "url": "https://YOUR-DOMAIN.com",
-            "logo": "https://YOUR-DOMAIN.com/assets/klyvora-logo.png",
-            "description": "Creative digital agency specializing in web design and development.",
-            "founder": {
-                "@type": "Person",
-                "name": "Aakash Naidu D"
-            },
-            "email": "akashnaidu060@gmail.com",
-            "sameAs": [
-                "https://instagram.com/bittu.el"
-            ]
-        }
-        </script>
+    <title>KLYVORA — Your Vision. Our Creation.</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
+
 </head>
 
 <body>
 
-    <!-- PRELOADER -->
-    <div class="loader" id="loader">
+    <!-- KLYVORA GLOBAL AI UNIVERSE -->
+    <div id="ai-world">
+        <canvas id="ai-world-canvas"></canvas>
+        <div class="ai-world-overlay"></div>
+        <div class="ai-world-glow"></div>
+    </div>
+
+    <!-- EXISTING WEBSITE CONTENT -->
+
+    <!-- ==================================
+         PRELOADER
+    =================================== -->
+
+    <div id="loader">
         <div class="loader-content">
-            <div class="loader-logo">K<span>.</span></div>
-            <p>CREATING THE FUTURE</p>
-            <div class="loader-line">
-                <span></span>
-            </div>
+            <div class="loader-logo">KLYVORA<span>.</span></div>
+            <div class="loader-line"></div>
+            <p>CREATING DIGITAL EXPERIENCES</p>
         </div>
     </div>
 
 
-    <!-- BACKGROUND EFFECTS -->
-    <div class="background-effects">
-        <div class="ambient ambient-one"></div>
-        <div class="ambient ambient-two"></div>
-        <div class="ambient ambient-three"></div>
-        <div class="grid-overlay"></div>
-    </div>
+    <!-- ==================================
+         NAVIGATION
+    =================================== -->
 
+    <header id="header">
 
-    <!-- NAVBAR -->
-    <header class="navbar" id="navbar">
+        <nav class="navbar">
 
-        <a href="#home" class="brand-logo">
-            <img src="assets/klyvora-logo.png" alt="KLYVORA Logo">
-            <span>KLYVORA</span>
-        </a>
+            <a href="#home" class="logo">
+                KLYVORA<span>.</span>
+            </a>
 
-        <nav class="nav-links" id="navLinks">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#work">Our Work</a>
-            <a href="#process">Process</a>
+            <div class="nav-links" id="navLinks">
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#process">Process</a>
+                <a href="#why">Why Us</a>
+
+                <a href="#contact" class="nav-contact">
+                    Let's Talk <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+
+            </div>
+
+            <button id="menuToggle" class="menu-toggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+
+                <span></span>
+                <span></span>
+
+            </button>
+
         </nav>
-
-        <a href="https://wa.me/919441051070?text=Hello%20KLYVORA!%20I%20am%20interested%20in%20your%20services." class="nav-cta" target="_blank" rel="noreferrer">
-            Let's Talk
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
-            <span></span>
-            <span></span>
-        </button>
 
     </header>
 
 
     <main>
 
-        <!-- HERO SECTION -->
+
+        <!-- ==================================
+             01. HERO
+        =================================== -->
+
         <section class="hero" id="home">
+
+            <!-- KLYVORA CINEMATIC AI VIDEO -->
+            <div class="hero-video-background">
+                <video
+                    id="hero-ai-video"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="auto"
+                >
+                    <source src="https://res.cloudinary.com/hlxirf7d/video/upload/hero-ai.mp4" type="video/mp4">
+                </video>
+
+                <div class="hero-video-overlay"></div>
+            </div>
+
+            <div class="hero-background"></div>
 
             <div class="hero-content">
 
-                <div class="hero-label reveal">
+                <div class="hero-label">
                     <span class="status-dot"></span>
-                    INDEPENDENT DIGITAL CREATIVE STUDIO
+                    DIGITAL CREATION STUDIO
                 </div>
 
-                <h1 class="hero-title reveal">
-                    We create
-                    <span class="gradient-text">digital</span>
-                    <span class="hero-outline">experiences.</span>
+                <h1>
+                    YOUR VISION.<br>
+                    <span>OUR CREATION.</span>
                 </h1>
 
-                <p class="hero-description reveal">
-                    We transform ambitious ideas into extraordinary digital
-                    experiences. Strategy, design and technology — crafted
-                    to move your brand forward.
+                <p class="hero-description">
+                    We create premium websites that transform
+                    your ideas into powerful digital experiences.
                 </p>
 
-                <div class="hero-actions reveal">
+                <div class="hero-buttons">
 
-                    <a href="#work" class="button button-primary">
-                        Explore Our Work
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-
-                    <a href="https://wa.me/919441051070?text=Hello%20KLYVORA!%20I%20am%20interested%20in%20your%20services." class="button button-secondary" target="_blank" rel="noreferrer">
-                        Start a Project
+                    <a href="#contact" class="btn btn-primary">
+                        START YOUR PROJECT
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
 
-                </div>
-
-                <div class="hero-bottom reveal">
-
-                    <div class="hero-stat">
-                        <h3>01<span>+</span></h3>
-                        <p>Creative Vision</p>
-                    </div>
-
-                    <div class="hero-stat">
-                        <h3>∞</h3>
-                        <p>Possibilities</p>
-                    </div>
-
-                    <div class="hero-stat">
-                        <h3>100<span>%</span></h3>
-                        <p>Commitment</p>
-                    </div>
+                    <a href="#services" class="btn btn-outline">
+                        EXPLORE OUR SERVICES
+                    </a>
 
                 </div>
 
             </div>
 
 
-            <!-- HERO VISUAL -->
-            <div class="hero-visual reveal">
+            <!-- Three.js 3D Scene Container -->
 
-                <div class="visual-glow"></div>
+            <div class="hero-visual">
 
-                <div class="orbit orbit-one"></div>
-                <div class="orbit orbit-two"></div>
-                <div class="orbit orbit-three"></div>
-
-                <div class="hero-sphere">
-                    <div class="sphere-inner"></div>
-                    <div class="sphere-highlight"></div>
-                </div>
-
-                <div class="floating-card card-top">
-                    <span class="card-icon">
-                        <i class="fa-solid fa-wand-magic-sparkles"></i>
-                    </span>
-                    <div>
-                        <strong>Creative Thinking</strong>
-                        <small>Ideas without limits</small>
-                    </div>
-                </div>
-
-                <div class="floating-card card-bottom">
-                    <span class="card-icon">
-                        <i class="fa-solid fa-bolt"></i>
-                    </span>
-                    <div>
-                        <strong>Digital Innovation</strong>
-                        <small>Built for tomorrow</small>
-                    </div>
-                </div>
-
-                <div class="visual-caption">
-                    <span>FIG. 001</span>
-                    <span>THE FUTURE IS CREATIVE</span>
-                </div>
+                <div class="hero-orbit orbit-one"></div>
+                <div class="hero-orbit orbit-two"></div>
 
             </div>
 
 
-            <div class="hero-scroll">
+            <div class="hero-bottom">
+
                 <span>SCROLL TO EXPLORE</span>
-                <div class="scroll-line"></div>
-            </div>
 
-        </section>
-
-
-        <!-- MARQUEE -->
-        <section class="marquee-section">
-
-            <div class="marquee-track">
-
-                <div class="marquee-content">
-                    <span>DESIGN</span>
-                    <i class="fa-solid fa-asterisk"></i>
-                    <span>DEVELOPMENT</span>
-                    <i class="fa-solid fa-asterisk"></i>
-                    <span>INNOVATION</span>
-                    <i class="fa-solid fa-asterisk"></i>
-                    <span>CREATIVITY</span>
-                    <i class="fa-solid fa-asterisk"></i>
-                    <span>EXPERIENCE</span>
-                    <i class="fa-solid fa-asterisk"></i>
+                <div class="scroll-indicator">
+                    <span></span>
                 </div>
 
-                <div class="marquee-content" aria-hidden="true">
-                    <span>DESIGN</span>
-                    <i class="fa-solid fa-asterisk"></i>
-                    <span>DEVELOPMENT</span>
-                    <i class="fa-solid fa-asterisk"></i>
-                    <span>INNOVATION</span>
-                    <i class="fa-solid fa-asterisk"></i>
-                    <span>CREATIVITY</span>
-                    <i class="fa-solid fa-asterisk"></i>
-                    <span>EXPERIENCE</span>
-                    <i class="fa-solid fa-asterisk"></i>
-                </div>
+                <span>01 / 07</span>
 
             </div>
 
         </section>
 
 
-        <!-- ABOUT SECTION -->
-        <section class="about section-padding" id="about">
 
-            <div class="section-heading reveal">
+        <!-- ==================================
+             02. ABOUT
+        =================================== -->
 
-                <span class="eyebrow">01 — WHO WE ARE</span>
+        <section class="about section" id="about">
+
+            <!-- ABOUT CINEMATIC VIDEO BACKGROUND -->
+            <div class="about-video-background">
+                <video autoplay muted loop playsinline>
+                    <source src="https://res.cloudinary.com/hlxirf7d/video/upload/about-ai-1.mp4" type="video/mp4">
+                </video>
+
+                <video autoplay muted loop playsinline>
+                    <source src="https://res.cloudinary.com/hlxirf7d/video/upload/about-ai-2.mp4" type="video/mp4">
+                </video>
+
+                <video autoplay muted loop playsinline>
+                    <source src="https://res.cloudinary.com/hlxirf7d/video/upload/about-ai-3.mp4" type="video/mp4">
+                </video>
+
+                <div class="about-video-overlay"></div>
+            </div>
+
+            <div class="section-label">
+                <span>01</span> — ABOUT KLYVORA
+            </div>
+
+            <div class="about-content">
 
                 <h2>
-                    Not just digital.
-                    <span class="gradient-text">Different.</span>
+                    WE TURN IDEAS INTO
+                    <span>DIGITAL EXPERIENCES.</span>
                 </h2>
 
-            </div>
+                <p>
+                    KLYVORA is a digital creation studio focused on
+                    designing and developing premium websites for
+                    businesses, brands and individuals.
+                </p>
 
-            <div class="about-grid">
+                <p>
+                    We believe every idea deserves a powerful
+                    digital presence. From creative design to
+                    modern development, we bring your vision to life.
+                </p>
 
-                <div class="about-left reveal">
-
-                    <div class="about-number">01</div>
-
-                    <p class="about-big-text">
-                        We believe every great idea deserves an extraordinary
-                        digital identity.
-                    </p>
-
-                </div>
-
-                <div class="about-right reveal">
-
-                    <p>
-                        KLYVORA is an independent digital creative studio
-                        focused on building meaningful digital experiences.
-                    </p>
-
-                    <p>
-                        We combine creative thinking, modern technology and
-                        thoughtful design to help businesses create a stronger
-                        presence in the digital world.
-                    </p>
-
-                    <a href="#services" class="text-link">
-                        Discover what we do
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div class="about-feature-grid">
-
-                <div class="about-feature reveal">
-                    <span>01</span>
-                    <i class="fa-solid fa-lightbulb"></i>
-                    <h3>Think Bold</h3>
-                    <p>We challenge ordinary ideas and explore new possibilities.</p>
-                </div>
-
-                <div class="about-feature reveal">
-                    <span>02</span>
-                    <i class="fa-solid fa-pen-ruler"></i>
-                    <h3>Design Smart</h3>
-                    <p>We create meaningful visuals with purpose and precision.</p>
-                </div>
-
-                <div class="about-feature reveal">
-                    <span>03</span>
-                    <i class="fa-solid fa-code"></i>
-                    <h3>Build Better</h3>
-                    <p>We turn creative concepts into functional digital products.</p>
+                <div class="about-highlight">
+                    <span>CREATIVITY</span>
+                    <span>TECHNOLOGY</span>
+                    <span>EXPERIENCE</span>
                 </div>
 
             </div>
@@ -330,20 +234,35 @@
         </section>
 
 
-        <!-- SERVICES SECTION -->
-        <section class="services section-padding" id="services">
 
-            <div class="section-heading reveal">
+        <!-- ==================================
+             03. SERVICES
+        =================================== -->
 
-                <span class="eyebrow">02 — WHAT WE DO</span>
+        <section class="services section" id="services">
+
+            <!-- WHAT WE CREATE VIDEO BACKGROUND -->
+            <div class="create-video-background">
+                <video autoplay muted loop playsinline>
+                    <source src="https://res.cloudinary.com/hlxirf7d/video/upload/create-ai-1.mp4" type="video/mp4">
+                </video>
+                <div class="create-video-overlay"></div>
+            </div>
+
+            <div class="section-label">
+                <span>02</span> — WHAT WE CREATE
+            </div>
+
+            <div class="section-heading">
 
                 <h2>
-                    Ideas into
-                    <span class="gradient-text">impact.</span>
+                    DIGITAL SOLUTIONS.<br>
+                    <span>BUILT FOR YOU.</span>
                 </h2>
 
-                <p class="section-description">
-                    Everything your brand needs to stand out in a digital-first world.
+                <p>
+                    Everything you need to build a powerful
+                    digital identity.
                 </p>
 
             </div>
@@ -351,110 +270,134 @@
 
             <div class="services-grid">
 
-                <article class="service-card reveal">
+                <article class="service-card">
 
-                    <div class="service-top">
-                        <span>01 / DESIGN</span>
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </div>
+                    <div class="service-number">01</div>
 
                     <div class="service-icon">
-                        <i class="fa-solid fa-pen-nib"></i>
+                        <i class="fa-solid fa-laptop-code"></i>
                     </div>
 
-                    <h3>Digital Design</h3>
+                    <h3>Business Websites</h3>
 
                     <p>
-                        Beautiful, intuitive and user-focused interfaces
-                        designed to make every interaction meaningful.
+                        Professional websites that establish trust
+                        and help your business grow online.
                     </p>
 
-                    <div class="service-tags">
-                        <span>UI Design</span>
-                        <span>UX Design</span>
-                        <span>Prototyping</span>
-                    </div>
+                    <span class="service-link">
+                        EXPLORE <i class="fa-solid fa-arrow-right"></i>
+                    </span>
 
                 </article>
 
 
-                <article class="service-card reveal">
+                <article class="service-card">
 
-                    <div class="service-top">
-                        <span>02 / DEVELOPMENT</span>
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </div>
+                    <div class="service-number">02</div>
 
                     <div class="service-icon">
-                        <i class="fa-solid fa-code"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
                     </div>
 
-                    <h3>Web Development</h3>
+                    <h3>E-Commerce Websites</h3>
 
                     <p>
-                        High-performance websites built with modern
-                        technologies, responsive layouts and clean code.
+                        Modern online stores designed to showcase
+                        products and create better shopping experiences.
                     </p>
 
-                    <div class="service-tags">
-                        <span>Websites</span>
-                        <span>Frontend</span>
-                        <span>Backend</span>
-                    </div>
+                    <span class="service-link">
+                        EXPLORE <i class="fa-solid fa-arrow-right"></i>
+                    </span>
 
                 </article>
 
 
-                <article class="service-card reveal">
+                <article class="service-card">
 
-                    <div class="service-top">
-                        <span>03 / BRANDING</span>
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <div class="service-number">03</div>
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-user-astronaut"></i>
                     </div>
+
+                    <h3>Portfolio Websites</h3>
+
+                    <p>
+                        Unique personal websites that showcase
+                        your talent, work and achievements.
+                    </p>
+
+                    <span class="service-link">
+                        EXPLORE <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <div class="service-number">04</div>
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+
+                    <h3>Landing Pages</h3>
+
+                    <p>
+                        Powerful landing pages designed to
+                        communicate your message and drive action.
+                    </p>
+
+                    <span class="service-link">
+                        EXPLORE <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <div class="service-number">05</div>
 
                     <div class="service-icon">
                         <i class="fa-solid fa-fingerprint"></i>
                     </div>
 
-                    <h3>Brand Identity</h3>
+                    <h3>Brand Websites</h3>
 
                     <p>
-                        Distinctive brand identities that communicate
-                        your personality and create lasting impressions.
+                        Distinctive digital identities that
+                        represent your brand with confidence.
                     </p>
 
-                    <div class="service-tags">
-                        <span>Logo Design</span>
-                        <span>Branding</span>
-                        <span>Visual Identity</span>
-                    </div>
+                    <span class="service-link">
+                        EXPLORE <i class="fa-solid fa-arrow-right"></i>
+                    </span>
 
                 </article>
 
 
-                <article class="service-card reveal">
+                <article class="service-card">
 
-                    <div class="service-top">
-                        <span>04 / DIGITAL</span>
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </div>
+                    <div class="service-number">06</div>
 
                     <div class="service-icon">
                         <i class="fa-solid fa-cubes"></i>
                     </div>
 
-                    <h3>Digital Solutions</h3>
+                    <h3>3D Web Experiences</h3>
 
                     <p>
-                        Purpose-built digital solutions that simplify
-                        workflows and support business growth.
+                        Immersive websites featuring interactive
+                        3D visuals and cinematic animations.
                     </p>
 
-                    <div class="service-tags">
-                        <span>Web Apps</span>
-                        <span>Automation</span>
-                        <span>Solutions</span>
-                    </div>
+                    <span class="service-link">
+                        EXPLORE <i class="fa-solid fa-arrow-right"></i>
+                    </span>
 
                 </article>
 
@@ -463,203 +406,196 @@
         </section>
 
 
-        <!-- FEATURED STATEMENT -->
-        <section class="manifesto-section">
 
-            <div class="manifesto-content reveal">
+        <!-- ==================================
+             04. OUR PROCESS
+        =================================== -->
 
-                <span class="eyebrow">OUR PHILOSOPHY</span>
+        <section class="process section" id="process">
+
+            <!-- HOW WE WORK CINEMATIC VIDEO -->
+            <div class="process-video-background">
+                <video autoplay muted loop playsinline>
+                    <source src="https://res.cloudinary.com/hlxirf7d/video/upload/process-ai.mp4" type="video/mp4">
+                </video>
+                <div class="process-video-overlay"></div>
+            </div>
+
+            <div class="section-label">
+                <span>03</span> — HOW WE WORK
+            </div>
+
+            <div class="section-heading">
 
                 <h2>
-                    Your vision.
-                    <span class="gradient-text">Our creation.</span>
-                    <br>
-                    A future without limits.
+                    FROM IDEA<br>
+                    <span>TO REALITY.</span>
                 </h2>
 
                 <p>
-                    We don't just build for today. We create with tomorrow in mind.
+                    A simple, transparent journey
+                    from your first idea to launch.
                 </p>
 
             </div>
 
-            <div class="manifesto-decoration">
-                K
-            </div>
 
-        </section>
+            <div class="process-list">
 
+                <div class="process-item">
 
-        <!-- WORK SECTION -->
-        <section class="work section-padding" id="work">
+                    <span class="process-number">01</span>
 
-            <div class="section-heading work-heading reveal">
+                    <div>
+                        <h3>Discover</h3>
+                        <p>
+                            We understand your vision, goals
+                            and business requirements.
+                        </p>
+                    </div>
 
-                <div>
-                    <span class="eyebrow">03 — SELECTED WORK</span>
+                    <i class="fa-solid fa-lightbulb"></i>
 
-                    <h2>
-                        Made to
-                        <span class="gradient-text">stand out.</span>
-                    </h2>
                 </div>
 
-                <p class="section-description">
-                    A glimpse into the creative direction and digital experiences
-                    we aim to bring to life.
-                </p>
+
+                <div class="process-item">
+
+                    <span class="process-number">02</span>
+
+                    <div>
+                        <h3>Design</h3>
+                        <p>
+                            We transform your ideas into
+                            beautiful digital designs.
+                        </p>
+                    </div>
+
+                    <i class="fa-solid fa-pen-ruler"></i>
+
+                </div>
+
+
+                <div class="process-item">
+
+                    <span class="process-number">03</span>
+
+                    <div>
+                        <h3>Develop</h3>
+                        <p>
+                            We build your website using
+                            modern web technologies.
+                        </p>
+                    </div>
+
+                    <i class="fa-solid fa-code"></i>
+
+                </div>
+
+
+                <div class="process-item">
+
+                    <span class="process-number">04</span>
+
+                    <div>
+                        <h3>Launch</h3>
+                        <p>
+                            We test, optimize and launch
+                            your website online.
+                        </p>
+                    </div>
+
+                    <i class="fa-solid fa-rocket"></i>
+
+                </div>
+
+
+                <div class="process-item">
+
+                    <span class="process-number">05</span>
+
+                    <div>
+                        <h3>Support</h3>
+                        <p>
+                            We help you maintain and improve
+                            your digital presence.
+                        </p>
+                    </div>
+
+                    <i class="fa-solid fa-headset"></i>
+
+                </div>
 
             </div>
-
-
-            <div class="work-grid">
-
-                <article class="work-card work-large reveal">
-
-                    <div class="work-image work-image-one">
-
-                        <div class="project-art project-art-one">
-                            <span class="project-orbit"></span>
-                            <span class="project-circle"></span>
-                            <h3>NOVA<span>.</span></h3>
-                            <p>THE NEXT GENERATION</p>
-                        </div>
-
-                        <span class="project-category">01 / BRAND EXPERIENCE</span>
-
-                    </div>
-
-                    <div class="work-info">
-                        <div>
-                            <h3>Nova — Beyond Ordinary</h3>
-                            <p>Conceptual creative direction</p>
-                        </div>
-
-                        <span class="work-arrow">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </span>
-                    </div>
-
-                </article>
-
-
-                <article class="work-card reveal">
-
-                    <div class="work-image work-image-two">
-
-                        <div class="project-art project-art-two">
-                            <div class="form-window">
-                                <span>FORM / 01</span>
-                                <h3>Less.<br>But better.</h3>
-                                <div class="form-shape"></div>
-                            </div>
-                        </div>
-
-                        <span class="project-category">02 / DIGITAL DESIGN</span>
-
-                    </div>
-
-                    <div class="work-info">
-                        <div>
-                            <h3>Form — Minimal Living</h3>
-                            <p>Conceptual web design</p>
-                        </div>
-
-                        <span class="work-arrow">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </span>
-                    </div>
-
-                </article>
-
-
-                <article class="work-card reveal">
-
-                    <div class="work-image work-image-three">
-
-                        <div class="project-art project-art-three">
-                            <span class="future-ring"></span>
-                            <h3>FUTURE<br>IS NOW<span>.</span></h3>
-                            <p>REIMAGINE EVERYTHING</p>
-                        </div>
-
-                        <span class="project-category">03 / FUTURE CONCEPT</span>
-
-                    </div>
-
-                    <div class="work-info">
-                        <div>
-                            <h3>Future — New Dimensions</h3>
-                            <p>Conceptual digital experience</p>
-                        </div>
-
-                        <span class="work-arrow">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </span>
-                    </div>
-
-                </article>
-
-            </div>
-
-            <p class="portfolio-note">
-                * The projects shown above are creative concepts, not completed client projects.
-            </p>
 
         </section>
 
 
-        <!-- PROCESS SECTION -->
-        <section class="process section-padding" id="process">
 
-            <div class="section-heading reveal">
+        <!-- ==================================
+             05. WHY KLYVORA
+        =================================== -->
 
-                <span class="eyebrow">04 — HOW WE WORK</span>
+        <section class="why section" id="why">
+
+            <!-- KLYVORA DIFFERENCE VIDEO BACKGROUND -->
+            <div class="difference-video-background">
+                <video autoplay muted loop playsinline>
+                    <source src="https://res.cloudinary.com/hlxirf7d/video/upload/difference-ai.mp4" type="video/mp4">
+                </video>
+                <div class="difference-video-overlay"></div>
+            </div>
+
+            <div class="section-label">
+                <span>04</span> — THE KLYVORA DIFFERENCE
+            </div>
+
+            <div class="section-heading">
 
                 <h2>
-                    Simple process.
-                    <span class="gradient-text">Powerful results.</span>
+                    NOT JUST A WEBSITE.<br>
+                    <span>A BETTER EXPERIENCE.</span>
                 </h2>
 
             </div>
 
 
-            <div class="process-grid">
+            <div class="why-grid">
 
-                <div class="process-step reveal">
-                    <span class="process-number">01</span>
-                    <div class="process-icon">
-                        <i class="fa-solid fa-comments"></i>
-                    </div>
-                    <h3>Discover</h3>
-                    <p>We understand your vision, goals and challenges.</p>
+                <div class="why-card">
+                    <i class="fa-solid fa-gem"></i>
+                    <h3>Premium Design</h3>
+                    <p>Beautiful and distinctive digital experiences.</p>
                 </div>
 
-                <div class="process-step reveal">
-                    <span class="process-number">02</span>
-                    <div class="process-icon">
-                        <i class="fa-solid fa-compass-drafting"></i>
-                    </div>
-                    <h3>Strategize</h3>
-                    <p>We plan the right direction and create a clear roadmap.</p>
+                <div class="why-card">
+                    <i class="fa-solid fa-bolt"></i>
+                    <h3>Modern Technology</h3>
+                    <p>Modern tools and technologies for your website.</p>
                 </div>
 
-                <div class="process-step reveal">
-                    <span class="process-number">03</span>
-                    <div class="process-icon">
-                        <i class="fa-solid fa-wand-magic-sparkles"></i>
-                    </div>
-                    <h3>Create</h3>
-                    <p>We bring your ideas to life with thoughtful execution.</p>
+                <div class="why-card">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Designed for mobile, tablet and desktop.</p>
                 </div>
 
-                <div class="process-step reveal">
-                    <span class="process-number">04</span>
-                    <div class="process-icon">
-                        <i class="fa-solid fa-rocket"></i>
-                    </div>
-                    <h3>Launch</h3>
-                    <p>We deliver your project, ready for the digital world.</p>
+                <div class="why-card">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <h3>Smooth Animations</h3>
+                    <p>Engaging interactions and cinematic motion.</p>
+                </div>
+
+                <div class="why-card">
+                    <i class="fa-solid fa-handshake"></i>
+                    <h3>Client Focused</h3>
+                    <p>Your vision and requirements come first.</p>
+                </div>
+
+                <div class="why-card">
+                    <i class="fa-solid fa-life-ring"></i>
+                    <h3>Dedicated Support</h3>
+                    <p>Support throughout your digital journey.</p>
                 </div>
 
             </div>
@@ -667,107 +603,117 @@
         </section>
 
 
-        <!-- WHY KLYVORA -->
-        <section class="why-section section-padding">
 
-            <div class="why-grid">
+        <!-- ==================================
+             06. CALL TO ACTION
+        =================================== -->
 
-                <div class="why-left reveal">
+        <section class="cta section" id="start">
 
-                    <span class="eyebrow">05 — WHY KLYVORA</span>
+            <!-- KLYVORA CTA ENERGY PORTAL -->
+            <div class="cta-video-background">
+                <video autoplay muted loop playsinline>
+                    <source src="https://res.cloudinary.com/hlxirf7d/video/upload/cta-portal.mp4" type="video/mp4">
+                </video>
+                <div class="cta-video-overlay"></div>
+            </div>
 
-                    <h2>
-                        Built with
-                        <span class="gradient-text">purpose.</span>
-                    </h2>
+            <div class="cta-content">
 
-                    <p>
-                        We believe digital experiences should be more than
-                        visually appealing. They should solve problems,
-                        communicate value and create meaningful connections.
-                    </p>
+                <span class="cta-label">
+                    HAVE AN IDEA? LET'S BUILD IT.
+                </span>
 
-                    <a href="https://wa.me/919441051070?text=Hello%20KLYVORA!%20I%20am%20interested%20in%20your%20services." class="button button-primary" target="_blank" rel="noreferrer">
-                        Work With Us
-                        <i class="fa-solid fa-arrow-right"></i>
+                <h2>
+                    YOUR NEXT BIG IDEA
+                    <span>STARTS HERE.</span>
+                </h2>
+
+                <p>
+                    Tell us what you imagine.
+                    Together, let's create something extraordinary.
+                </p>
+
+                <a href="#contact" class="btn btn-primary">
+                    START YOUR PROJECT
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================
+             07. CONTACT
+        =================================== -->
+
+        <section class="contact section" id="contact">
+
+            <!-- KLYVORA CONTACT FINAL REVEAL -->
+            <div class="contact-video-background">
+                <video autoplay muted loop playsinline>
+                    <source src="https://res.cloudinary.com/hlxirf7d/video/upload/contact-reveal.mp4" type="video/mp4">
+                </video>
+                <div class="contact-video-overlay"></div>
+            </div>
+
+            <div class="section-label">
+                <span>05</span> — LET'S CONNECT
+            </div>
+
+            <div class="contact-content">
+
+                <h2>
+                    LET'S CREATE<br>
+                    <span>SOMETHING GREAT.</span>
+                </h2>
+
+                <p>
+                    Ready to bring your vision to life?
+                    Let's start a conversation.
+                </p>
+
+
+                <div class="contact-links">
+
+                    <a href="mailto:akashnaidu060@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>EMAIL US</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                    <a href="https://wa.me/919441051070"
+                        target="_blank" rel="noopener noreferrer">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>WHATSAPP</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                    <a href="https://instagram.com/bittu.el"
+                        target="_blank" rel="noopener noreferrer">
+
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>INSTAGRAM</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
                     </a>
 
                 </div>
 
-
-                <div class="why-right">
-
-                    <div class="why-item reveal">
-                        <span>01</span>
-                        <div>
-                            <h3>Creative by Nature</h3>
-                            <p>Fresh thinking and original ideas at every step.</p>
-                        </div>
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </div>
-
-                    <div class="why-item reveal">
-                        <span>02</span>
-                        <div>
-                            <h3>Technology Driven</h3>
-                            <p>Modern tools and thoughtful technical execution.</p>
-                        </div>
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </div>
-
-                    <div class="why-item reveal">
-                        <span>03</span>
-                        <div>
-                            <h3>Detail Obsessed</h3>
-                            <p>Every pixel, interaction and experience matters.</p>
-                        </div>
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </div>
-
-                    <div class="why-item reveal">
-                        <span>04</span>
-                        <div>
-                            <h3>Future Focused</h3>
-                            <p>Building digital experiences with tomorrow in mind.</p>
-                        </div>
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </div>
-
-                </div>
-
             </div>
 
-        </section>
 
+            <div class="founder-card">
 
-        <!-- CONTACT SECTION -->
-        <section class="contact section-padding" id="contact">
+                <span>THE PERSON BEHIND KLYVORA</span>
 
-            <div class="contact-box reveal">
+                <h3>AAKASH NAIDU D</h3>
 
-                <div class="contact-glow"></div>
-
-                <span class="eyebrow">06 — HAVE A PROJECT IN MIND?</span>
-
-                <h2>
-                    Let's create
-                    <span class="gradient-text">something</span>
-                    extraordinary.
-                </h2>
-
-                <p>
-                    Have an idea? Let's turn it into something real.
-                    Tell us what you're imagining.
-                </p>
-
-                <a href="mailto:hello@klyvora.com" class="button button-primary contact-button">
-                    Start a Conversation
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-
-                <div class="contact-decoration">
-                    K<span>.</span>
-                </div>
+                <p>FOUNDER & DIGITAL CREATOR</p>
 
             </div>
 
@@ -777,77 +723,48 @@
     </main>
 
 
-    <!-- FOOTER -->
+
+    <!-- ==================================
+         FOOTER
+    =================================== -->
+
     <footer class="footer">
 
         <div class="footer-top">
 
-            <div class="footer-brand">
+            <a href="#home" class="footer-logo">
+                KLYVORA<span>.</span>
+            </a>
 
-                <a href="#home" class="logo footer-logo">
-                    <span class="logo-icon">K</span>
-                    <span class="logo-text">KLYVORA<span class="logo-dot">.</span></span>
-                </a>
+            <p>
+                Your Vision. Our Creation.
+            </p>
 
-                <p>
-                    Your Vision. Our Creation.
-                </p>
-
-            </div>
-
-
-            <div class="footer-links">
-
-                <div class="footer-column">
-                    <h4>FOUNDED BY</h4>
-                    <p style="margin: 0; color: #d7d7e5; line-height: 1.8;">
-                        AKASH NAIDU D
-                    </p>
-                </div>
-
-                <div class="footer-column">
-                    <h4>LET'S CONNECT</h4>
-                    <a href="https://wa.me/9441051070" target="_blank" rel="noreferrer">WhatsApp: +91 9441051070</a>
-                    <a href="https://instagram.com/bittu.el" target="_blank" rel="noreferrer">Instagram: @bittu.el</a>
-                    <a href="mailto:akashnaidu060@gmail.com">Email: akashnaidu060@gmail.com</a>
-                </div>
-
-                <div class="footer-column">
-                    <h4>MORE</h4>
-                    <a href="https://wa.me/919441051070?text=Hello%20KLYVORA!%20I%20am%20interested%20in%20your%20services." target="_blank" rel="noreferrer">Start a Project</a>
-                    <a href="#about">About KLYVORA</a>
-                    <a href="#services">Our Services</a>
-                </div>
-
-            </div>
+            <a href="#home" class="back-to-top">
+                BACK TO TOP <i class="fa-solid fa-arrow-up"></i>
+            </a>
 
         </div>
 
 
         <div class="footer-bottom">
 
-            <p>© <span id="year"></span> KLYVORA. All Rights Reserved.</p>
+            <span>
+                © <span id="year"></span> KLYVORA.
+                ALL RIGHTS RESERVED.
+            </span>
 
-            <p>YOUR VISION. OUR CREATION.</p>
-
-            <a href="#home" class="back-to-top">
-                BACK TO TOP
-                <i class="fa-solid fa-arrow-up"></i>
-            </a>
+            <span>DESIGNED WITH PURPOSE.</span>
 
         </div>
 
     </footer>
 
 
-    <!-- CUSTOM CURSOR -->
-    <div class="cursor-dot" id="cursorDot"></div>
-    <div class="cursor-outline" id="cursorOutline"></div>
 
-
-    <!-- MAIN JAVASCRIPT -->
-    <script src="script.js"></script>
+    <!-- Main JavaScript -->
+    <script type="module" src="/script.js"></script>
 
 </body>
+
 </html>
-```
